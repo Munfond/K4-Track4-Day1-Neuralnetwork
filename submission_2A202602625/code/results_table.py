@@ -66,6 +66,9 @@ def write_xlsx(rows, template_path, out_path):
     import openpyxl
     from openpyxl.formula.translate import Translator
     from openpyxl.workbook.properties import CalcProperties
+    template_path = Path(template_path)
+    if not template_path.is_file():
+        template_path = Path(__file__).resolve().parent / "experiment_table_template.xlsx"
     wb = openpyxl.load_workbook(template_path)
     ws = wb["Experiments"]
     headers = [cell.value for cell in ws[1]]
