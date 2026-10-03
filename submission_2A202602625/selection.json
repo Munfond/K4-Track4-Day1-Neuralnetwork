@@ -1,0 +1,8 @@
+{
+  "final": "hparam-wide",
+  "baseline": "base-s1",
+  "seed": 1,
+  "final_signature": "d960c24d58ad9675e951a29c72bb12a302b41420c49733ac86da77aeda0d2606",
+  "baseline_signature": "aa8aaca8657b29dbf2ccc8192996bd08956b2460ee2c659466055b51ab8671dd",
+  "criterion": "max val_macro_f1 t\u1ea1i best-val-loss epoch; seed=1; lo\u1ea1i tuning/stress/skipped/diverged"
+}

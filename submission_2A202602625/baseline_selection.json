@@ -1,0 +1,30 @@
+{
+  "chosen_lr": 0.1,
+  "criterion": "max val macro-F1 t\u1ea1i best-val-loss epoch c\u1ee7a tuning",
+  "tuning_ids": [
+    "tune-sgdm-lr0.01",
+    "tune-sgdm-lr0.03",
+    "tune-sgdm-lr0.1"
+  ],
+  "statistics": {
+    "n": 3,
+    "exp_ids": [
+      "base-s1",
+      "base-s2",
+      "base-s3"
+    ],
+    "val_acc": {
+      "mean": 0.9097050407693467,
+      "std": 0.0024424265536689494
+    },
+    "val_macro_f1": {
+      "mean": 0.8542656551567207,
+      "std": 0.01189376265311929
+    },
+    "best_val_loss": {
+      "mean": 0.22710979389465816,
+      "std": 0.005336578873025123
+    },
+    "noise_2sigma": 0.02378752530623858
+  }
+}

@@ -3,6 +3,18 @@
 **Track 4 · Ngày 1 · VinUniversity AICB 2026**
 Bài học liên quan: *Mạng Nơ-ron và Huấn Luyện* (slide Day 1).
 
+## Bài làm đã hoàn thiện — Nguyễn Đức Anh, 2A202602625
+
+Code và kết quả thực nghiệm của sinh viên nằm trong [`submission_2A202602625/`](submission_2A202602625/). Thư mục `code/` ở gốc là khung bài lab ban đầu; dùng code trong thư mục submission để xem và chạy bài làm.
+
+- [Notebook Part 0–4 có output Colab](submission_2A202602625/code/lab.ipynb).
+- [Báo cáo kết quả và nhận xét](submission_2A202602625/REPORT.md).
+- [Bảng thí nghiệm Excel](submission_2A202602625/experiments.xlsx).
+- [Hướng dẫn chạy trên Colab/Kaggle](CLOUD_RUN_GUIDE.md).
+- [Kết quả kiểm tra bản nộp](SUBMISSION_CHECK.md).
+
+Đã chạy 25 lượt trên Tesla T4. Final M-wide đạt eval macro-F1 **0.876284** và accuracy **0.919787**. Kết quả chi tiết, cấu hình và biểu đồ nằm trong `submission_2A202602625/results/` và `submission_2A202602625/figures/`. Các file ZIP đóng gói, dữ liệu sinh ra, môi trường Python và checkpoint được Git bỏ qua.
+
 > Câu hỏi của bài học: *"Một mạng có loss không giảm sau 2 000 bước huấn luyện. Lỗi nằm ở dữ liệu, ở kiến trúc, hay ở vòng lặp huấn luyện?"*
 > Sau lab này bạn phải tự trả lời được câu hỏi đó **bằng số liệu do chính bạn đo**.
 

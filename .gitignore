@@ -1,4 +1,9 @@
 __pycache__/
+.venv/
+submission_*/_smoke/
+cloud_bundle_*.zip
+submission_*.zip
+submission_*/code/validation_smoke.ipynb
 .ipynb_checkpoints/
 *.pyc
 .DS_Store

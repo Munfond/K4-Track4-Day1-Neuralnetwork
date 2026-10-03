@@ -1,0 +1,129 @@
+{
+  "cfg": {
+    "exp_id": "tune-sgdm-lr0.01",
+    "group": "hparam",
+    "description": "Tuning lr SGDM chỉ bằng val",
+    "loss": "ce",
+    "optimizer": "sgd_momentum",
+    "lr": 0.01,
+    "weight_decay": 0.0,
+    "momentum": 0.9,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "batch": 512,
+    "epochs": 3,
+    "hidden": [
+      256,
+      128
+    ],
+    "dropout": 0.0,
+    "init": "he",
+    "clip_norm": null,
+    "precision": "fp32",
+    "seed": 1,
+    "train_eval_size": 50000,
+    "eval_batch": 8192,
+    "out_dir": "/content/drive/MyDrive/K4_Track4_Day1/submission_2A202602625",
+    "resume": true,
+    "verbose": true,
+    "prediction": "lr quá thấp có thể học chậm; lr cao hơn có thể cải thiện nhanh hoặc dao động.",
+    "notes": "Tuning 3 epoch; không so ngang baseline 20 epoch",
+    "stage": "tuning"
+  },
+  "history": {
+    "epoch": [
+      1,
+      2,
+      3
+    ],
+    "train_loss": [
+      0.5818995874023437,
+      0.5301284565544129,
+      0.4952737494468689
+    ],
+    "val_loss": [
+      0.5803557403057199,
+      0.529405148943485,
+      0.49466621525811183
+    ],
+    "val_acc": [
+      0.7560401024074352,
+      0.7757793507024375,
+      0.7906348830705019
+    ],
+    "val_macro_f1": [
+      0.4936369379325348,
+      0.5830654963059817,
+      0.5982364118210796
+    ],
+    "grad_norm": [
+      0.43685173109030295,
+      0.5046606885353834,
+      0.6027822657661228
+    ],
+    "grad_norm_max": [
+      2.84374737739563,
+      1.0953656435012817,
+      1.4529942274093628
+    ],
+    "clip_fraction": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "epoch_time_s": [
+      1.564768903000072,
+      1.3478783430000476,
+      1.2930548739999495
+    ],
+    "peak_mem_MB": [
+      202.6943359375,
+      202.6943359375,
+      202.6943359375
+    ],
+    "skipped_updates": [
+      0,
+      0,
+      0
+    ]
+  },
+  "summary": {
+    "status": "complete",
+    "step0_loss": 2.2690618110553,
+    "best_val_loss": 0.49466621525811183,
+    "best_epoch": 3,
+    "final_train_loss": 0.4952737494468689,
+    "final_val_loss": 0.49466621525811183,
+    "val_acc": 0.7906348830705019,
+    "val_macro_f1": 0.5982364118210796,
+    "time_per_epoch_s": 1.4019007066666898,
+    "peak_mem_MB": 202.6943359375,
+    "diverged": false,
+    "clip_fraction": 0.0,
+    "skipped_updates": 0
+  },
+  "signature": "0ebcba78bf61a8c6fcbe321c453a2583835daf85fb3c657f8bd6440e11184307",
+  "environment": {
+    "torch": "2.11.0+cu130",
+    "device": "cuda:0",
+    "gpu": "Tesla T4"
+  },
+  "initial": {
+    "val": {
+      "loss": 2.2690618110553,
+      "acc": 0.028334158043071364,
+      "macro_f1": 0.027840246085282638
+    },
+    "activation_std": [
+      0.6609023213386536,
+      0.6403592824935913,
+      0.5772839188575745
+    ],
+    "activation_measurement": "sau mỗi Linear, eval mode",
+    "train_monitor_size": 50000,
+    "updates_per_epoch": 727
+  }
+}
